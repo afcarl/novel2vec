@@ -1,0 +1,468 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+
+    <title>Векторные романы</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style type="text/css">
+    
+    </style>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+        });
+    </script>
+    
+    <style type="text/css">
+    .panel
+{
+    position: relative;
+}
+
+.panel-default > .panel-leftheading
+{
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+
+.panel-primary > .panel-leftheading
+{
+    color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
+.panel-success > .panel-leftheading
+{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.panel-info > .panel-leftheading
+{
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.panel-warning > .panel-leftheading
+{
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+.panel-danger > .panel-leftheading
+{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.panel-leftheading
+{
+    width: 42px;
+    padding: 10px 15px;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    float: left;
+    height: 100%;
+    position: absolute;
+}
+
+.panel-lefttitle
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 16px;
+    color: inherit;
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: left top;
+    -moz-transform: rotate(90deg);
+    -moz-transform-origin: left top;
+    -ms-transform: rotate(90deg);
+    -ms-transform-origin: left top;
+    -o-transform: rotate(90deg);
+    -o-transform-origin: left top;
+    transform: rotate(90deg);
+    transform-origin: left top;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.panel-rightbody
+{
+    float: left;
+    margin-left: 45px;
+    padding: 15px;
+}
+
+    </style>
+    
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+        });
+    </script>
+    
+</head>
+<body>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<div class="container">
+    
+    <div class="page-header">
+        <h1>Векторные романы</h1>
+    </div>
+    
+<div class="col-md-12">
+    <h2>Русская литература и дистрибутивная семантика</h2>
+    
+    <p class="text-right"><em>Да вспомнил, хоть не без прегрешения,<br />Из Энеиды два стихотворения.</em></p>
+    <p>&nbsp;</p>
+    
+    <p>Компьютерная лингвистика позволяет вычислять семантическую близость, то есть автоматически находить слова, которые ближе всего друг к другу по своему значению. Это можно делать благодаря так называемым «векторным моделям». Подробно об этом рассказывается на сайте <a href="http://rusvectores.org/ru/about/">RusVectōrēs</a>.</p> 
+    
+    <p>А что будет если в хорошо знакомых нам текстах все слова заменить на близкие по смыслу? Насколько изменится такой текст? Что произойдёт с его восприятием? Здесь вы найдёте результаты такого эксперимента.</p>
+    
+    <p>Я взял пять классических русских романов: «Евгений Онегин», «Преступление и наказание», «Война и мир», «Отцы и дети», «Мастер и Маргарита» (Дмитрий Быков считает, что романы, содержащие в своём названии «и», всегда играют особенную роль в истории русской литературы, так что таких романов в этом эксперименте четыре из пяти) и автоматически подобрал к ним близкие по значению слова (так называемые <em>квазисинонимы</em>). Для этого я воспользовался векторной моделью с сайта <a href="http://rusvectores.org/ru/models/">RusVectōrēs</a> (модель построена на текстах НКРЯ и Википедии за ноябрь 2016).</p> 
+    
+    <p>В принципе, такие эксперименты уже были, в частности, <a href="https://github.com/arnicas/word2vec-pride-vis">можно найти попытку сделать такие же замены в романе «Гордость и предубеждение»</a>, но с английским языком этот фокус провернуть гораздо проще: там нет ни склонения, ни согласования по роду, да и спряжение весьма редуцированное, можно сказать, условное. А вот в русском языке если мы просто заменим одну произвольную форму слова на другую произвольную, текст распадётся и станет нечитабельным. Поэтому замену нужно проводить хитрее, используя морфологический разбор исходного слова и автоматически порождая грамматическую форму для слова-замены. В этом помог <a href="https://pymorphy2.readthedocs.io/en/latest/">Морфологический анализатор pymorphy2</a>, который умеет и то, и другое: и устанавливать грамматическую форму слова, и генерировать новую форму. Код, который делает все замены, <a href="https://github.com/nevmenandr/word2vec-russian-novels">доступен на GitHub</a>.</p>
+    
+    <p>Замене подвергаются только самостоятельные части речи (существительные, прилагательные, глаголы и наречия). Имена собственные большей частью остаются такими, как в исходном тексте. Если в векторной модели не находится квазисинонимов для слово, то слово не заменяется.</p>
+    
+    <p>Я сделал две версии замен: в одном случае из векторной модели извлекается ближайшее по значению слово той же части речи, а в другом (версия 2.0), если речь идёт о существительном, то ищется слово того же рода, что и исходное. Это делает текст более связным грамматически, хотя и лишает нас замечательных казусов вроде тех, что вынесены в эпиграф. </p>
+    
+    <div>
+  
+     </div>
+
+<p>&nbsp;</p>
+
+	<div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Тексты романов</h3>
+        </div>   
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
+                    <div class="col-xs-10">
+                        «Евгений Онегин»
+                    </div>
+                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                </div>
+                <div id="detail-1">
+                    <hr></hr>
+                    <div class="container">
+                        <div class="fluid-row">
+                            <div class="col-xs-1">
+                                Оригинал
+                            </div>
+                            <div class="col-xs-5">
+                               <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_before/EugeneOnegin.txt">Исходный текст романа до замен</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                2.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_SampleEugeneOnegin.txt">Небольшой фрагмент для ознакомления</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                
+                                1.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/EugeneOnegin.txt">Версия без отбора существительных по роду</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                2.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_EugeneOnegin.txt">Полный текст с учётом согласования по роду</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row toggle" id="dropdown-detail-2" data-toggle="detail-2">
+                    <div class="col-xs-10">
+                        «Преступление и наказание»
+                    </div>
+                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                </div>
+                <div id="detail-2">
+                    <hr></hr>
+                    <div class="container">
+                        <div class="fluid-row">
+                            <div class="col-xs-1">
+                                Оригинал
+                            </div>
+                            <div class="col-xs-5">
+                               <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_before/CrimeAndPunishment.txt">Исходный текст романа до замен</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                2.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_SampleCrimeAndPunishment.txt">Небольшой фрагмент для ознакомления</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                
+                                1.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/CrimeAndPunishment.txt">Версия без отбора существительных по роду</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                2.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_CrimeAndPunishment.txt">Полный текст с учётом согласования по роду</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row toggle" id="dropdown-detail-3" data-toggle="detail-3">
+                    <div class="col-xs-10">
+                        «Война и мир»
+                    </div>
+                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                </div>
+                <div id="detail-3">
+                    <hr></hr>
+                    <div class="container">
+                        <div class="fluid-row">
+                            <div class="col-xs-1">
+                                Оригинал
+                            </div>
+                            <div class="col-xs-5">
+                               <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_before/WarAndPeace.txt">Исходный текст романа до замен</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                2.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_SampleWarAndPeace.txt">Небольшой фрагмент для ознакомления</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                
+                                1.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/WarAndPeace.txt">Версия без отбора существительных по роду</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                2.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_WarAndPeace.txt">Полный текст с учётом согласования по роду</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row toggle" id="dropdown-detail-4" data-toggle="detail-4">
+                    <div class="col-xs-10">
+                        «Отцы и дети»
+                    </div>
+                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                </div>
+                <div id="detail-4">
+                    <hr></hr>
+                    <div class="container">
+                        <div class="fluid-row">
+                            <div class="col-xs-1">
+                                Оригинал
+                            </div>
+                            <div class="col-xs-5">
+                               <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_before/FathersAndSons.txt">Исходный текст романа до замен</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                2.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_SampleFathersAndSons.txt">Небольшой фрагмент для ознакомления</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                
+                                1.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/FathersAndSons.txt">Версия без отбора существительных по роду</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                2.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_FathersAndSons.txt">Полный текст с учётом согласования по роду</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row toggle" id="dropdown-detail-5" data-toggle="detail-5">
+                    <div class="col-xs-10">
+                        «Мастер и Маргарита»
+                    </div>
+                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                </div>
+                <div id="detail-5">
+                    <hr></hr>
+                    <div class="container">
+                        <div class="fluid-row">
+                            <div class="col-xs-1">
+                                Оригинал
+                            </div>
+                            <div class="col-xs-5">
+                               <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_before/MasterAndMargarita.txt">Исходный текст романа до замен</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                2.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_SampleMasterAndMargarita.txt">Небольшой фрагмент для ознакомления</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                
+                                1.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/MasterAndMargarita.txt">Версия без отбора существительных по роду</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                2.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_MasterAndMargarita.txt">Полный текст с учётом согласования по роду</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+	</div>
+     
+    <hr>
+    <h2>Что получилось?</h2>
+    <div class="row">
+    	<div class="col-md-6">
+        
+<div class="panel panel-default">
+  <div class="panel-leftheading">
+      <h3 class="panel-lefttitle">Оригинальный текст</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p class="text-right">...Так кто ж ты, наконец?<br />
+      – Я – часть той силы,<br />
+      что вечно хочет<br />
+      зла и вечно совершает благо.</p>
+
+      <p>Гете. «Фауст»</p>
+
+
+
+      <p>Глава 1</p>
+
+      <p>Никогда не разговаривайте с неизвестными</p>
+
+      <p>Однажды весною, в час небывало жаркого заката, в Москве, на Патриарших прудах, появились два гражданина. Первый из них, одетый в летнюю серенькую пару, был маленького роста, упитан, лыс, свою приличную шляпу пирожком нес в руке, а на хорошо выбритом лице его помещались сверхъестественных размеров очки в черной роговой оправе. Второй – плечистый, рыжеватый, вихрастый молодой человек в заломленной на затылок клетчатой кепке – был в ковбойке, жеваных белых брюках и в черных тапочках.</p>
+ </div>
+    <div class="clearfix">
+    </div>
+</div>
+    </div>
+    <div class="col-md-6">
+
+<div class="panel panel-primary">
+  <div class="panel-leftheading">
+      <h3 class="panel-lefttitle">Векторная замена</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p class="text-right">...Так кто ж ты, наконец?<br />
+      – Я – территория той мощи,<br />
+      что оттого хочет<br />
+      добра и оттого предпринимает благо.</p>
+
+      <p>Гейне. «Мефистофель»</p>
+
+
+
+      <p>Глава 1</p>
+
+      <p>Никогда не беседуйте с невыясненными</p>
+
+      <p>Случайно весною, в полдень невиданно жаркого восхода, в Казани, на Митрополичьих ручьях, появились два согражданина. Первый из них, щеголеватый в десятилетнюю голубенькую пару, был крошечного прироста, тучен, плешив, свою порядочную шапку пирогом тащил в ладони, а на плохо выбритом лице его размещались потусторонних диаметров очки в черной роговой дужке. Второй – широкоплечий, курчавый, белобрысый смуглянки разум в заломленной на лоб цветастой кепочке – был в куртке, жеваных белых штанах и в черных тапочках.</p>
+      
+  </div>   
+      <div class="clearfix">
+    </div>     
+</div></div>
+    <hr>
+    
+    
+    <h2>Зачем это нужно?</h2>
+    <p>Конечно, в большей степени получившийся результат — это развлечение. Но не только. На основе получившихся текстов можно составлять задания для «олимпиад» по литературе. Кроме того, как кажется, эти тексты можно использовать для медленного чтения. Они могут помочь на каждом шаге задавать себе вопросы: «Почему здесь стоит это слово, а не другое?», «Что это нам даёт и что это меняет в нашем восприятии?» То есть, по сути, речь идёт о литературоведческом эксперименте, о введении экспериментальной плоскости в науку, которая, казалось бы, лишена её от природы и навсегда.</p>
+    <div>
+        
+    </div>     
+    <hr>
+    
+    <h2>Другие эксперименты с литературой и векторными моделями</h2>
+    
+    <p>Стоит отметить <a href="https://habrahabr.ru/post/275913/">любопытное применение векторных моделей в поиске по т.н. «пирожкам»</a>.</p>
+    
+    <p>В 2010 году я уже пытался внести вклад в современную художественную литературу. Как раз тогда в Норвегии вышел <a href="https://web.archive.org/web/20141202164748/http://www.flammeforlag.no/katalog/f64/">роман «Роман»</a> (бледная тень романа <a href="http://kodu.ut.ee/~roman_l/hyperfiction/htroman.html">POMAH</a> Романа Лейбова) <a href="http://www.audunmortensen.com/">Аудуна Мортенсена</a>, состоящий из расположенных в обратном порядке предложений набоковской «Лолиты» с изменёнными именами героев. Коллега из Университета Осло Kjetil Rå Hauge предложил мне написать программу, которая помогала бы писателям создавать такие произведения, что я и сделал в тот же день. <a href="http://nevmenandr.net/run/tools/">Веб-сервис доступен в Интернете</a>, и при выборе опции <em>Reverse order</em> создаёт новое художественное произведение.</p>
+    <div>
+        
+    </div>     
+    <hr>
+    
+</div>
+
+
+<p class="text-right"><a href="http://nevmenandr.net/bo.php">Борис Орехов</a></p>
+     
+
+</div>
+	<script type="text/javascript">
+	$(document).ready(function() {
+    $('[id^=detail-]').hide();
+    $('.toggle').click(function() {
+        $input = $( this );
+        $target = $('#'+$input.attr('data-toggle'));
+        $target.slideToggle();
+    });
+});
+	</script>
+</body>
+</html>
