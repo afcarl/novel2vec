@@ -155,7 +155,7 @@
     
     <p>Замене подвергаются только самостоятельные части речи (существительные, прилагательные, глаголы и наречия). Имена собственные большей частью остаются такими, как в исходном тексте (но не всегда). Если в векторной модели для слова не находится квазисинонимов, то оно не заменяется.</p>
     
-    <p>Я сделал две версии замен: в одном случае из векторной модели извлекается ближайшее по значению слово той же части речи, а в другом (версия 2.0), если речь идёт о существительном, то ищется слово того же рода, что и исходное. Это делает текст более связным грамматически, хотя и лишает нас замечательных казусов вроде того, что вынесен в эпиграф. </p>
+    <p>Я сделал три версии замен: в первом случае из векторной модели извлекается ближайшее по значению слово той же части речи, в другом (версия 2.0), если речь идёт о существительном, то ищется слово того же рода, что и исходное. Это делает текст более связным грамматически, хотя и лишает нас замечательных казусов вроде того, что вынесен в эпиграф. В третем случае использовались ёфцированные тексты романов (тексты предоставлены Денисом Кулагиным) и глаголы дополнительно фильтруются по залогу (замена для возвратного глагола ищется только среди возвратных).</p>
     
     <div>
   
@@ -189,7 +189,19 @@
                                 2.0
                             </div>
                             <div class="col-xs-5">
-                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_SampleEugeneOnegin.txt">Небольшой фрагмент для ознакомления</a>.
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_EugeneOnegin.txt">Полный текст с учётом согласования по роду</a>.
+                            </div>
+			    <div class="col-xs-1">
+                                Оригинал
+                            </div>
+                            <div class="col-xs-5">
+                               <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_before/EugeneOnegin_JOF.txt">Ёфицированный текст романа</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                3.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/3.0_SampleEugeneOnegin_JOF.txt">Небольшой фрагмент для ознакомления</a>.
                             </div>
                             <div class="col-xs-1">
                                 
@@ -199,10 +211,10 @@
                                 <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/EugeneOnegin.txt">Версия без отбора существительных по роду</a>.
                             </div>
                             <div class="col-xs-1">
-                                2.0
+                                3.0
                             </div>
                             <div class="col-xs-5">
-                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_EugeneOnegin.txt">Полный текст с учётом согласования по роду</a>.
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/3.0_EugeneOnegin_JOF.txt">Полный текст с учётом залога и ёфикации</a>.
                             </div>
                         </div>
                     </div>
@@ -229,20 +241,31 @@
                                 2.0
                             </div>
                             <div class="col-xs-5">
-                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_SampleCrimeAndPunishment.txt">Небольшой фрагмент для ознакомления</a>.
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_CrimeAndPunishment.txt">Полный текст с учётом согласования по роду</a>.
+                            </div>
+			    <div class="col-xs-1">
+                                Оригинал
+                            </div>
+                            <div class="col-xs-5">
+                               <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_before/CrimeAndPunishment_JOF.txt">Ёфицированный текст романа</a>.
                             </div>
                             <div class="col-xs-1">
-                                
+                                3.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/3.0_SampleCrimeAndPunishment_JOF.txt">Небольшой фрагмент для ознакомления</a>.
+                            </div>
+                            <div class="col-xs-1">
                                 1.0
                             </div>
                             <div class="col-xs-5">
                                 <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/CrimeAndPunishment.txt">Версия без отбора существительных по роду</a>.
                             </div>
                             <div class="col-xs-1">
-                                2.0
+                                3.0
                             </div>
                             <div class="col-xs-5">
-                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_CrimeAndPunishment.txt">Полный текст с учётом согласования по роду</a>.
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/3.0_CrimeAndPunishment_JOF.txt">Полный текст с учётом залога и ёфикации</a>.
                             </div>
                         </div>
                     </div>
@@ -269,7 +292,19 @@
                                 2.0
                             </div>
                             <div class="col-xs-5">
-                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_SampleWarAndPeace.txt">Небольшой фрагмент для ознакомления</a>.
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_WarAndPeace.txt">Полный текст с учётом согласования по роду</a>.
+                            </div>
+			    <div class="col-xs-1">
+                                Оригинал
+                            </div>
+                            <div class="col-xs-5">
+                               <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_before/WarAndPeace_JOF.txt">Ёфицированный текст романа</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                3.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/3.0_SampleWarAndPeace_JOF.txt">Небольшой фрагмент для ознакомления</a>.
                             </div>
                             <div class="col-xs-1">
                                 
@@ -279,10 +314,10 @@
                                 <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/WarAndPeace.txt">Версия без отбора существительных по роду</a>.
                             </div>
                             <div class="col-xs-1">
-                                2.0
+                                3.0
                             </div>
                             <div class="col-xs-5">
-                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_WarAndPeace.txt">Полный текст с учётом согласования по роду</a>.
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/3.0_WarAndPeace_JOF.txt">Полный текст с учётом залога и ёфикации</a>.
                             </div>
                         </div>
                     </div>
@@ -309,20 +344,31 @@
                                 2.0
                             </div>
                             <div class="col-xs-5">
-                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_SampleFathersAndSons.txt">Небольшой фрагмент для ознакомления</a>.
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_FathersAndSons.txt">Полный текст с учётом согласования по роду</a>.
+                            </div>
+			    <div class="col-xs-1">
+                                Оригинал
+                            </div>
+                            <div class="col-xs-5">
+                               <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_before/FathersAndSons_JOF.txt">Ёфицированный текст романа</a>.
                             </div>
                             <div class="col-xs-1">
-                                
+                                3.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/3.0_SampleFathersAndSons_JOF.txt">Небольшой фрагмент для ознакомления</a>.
+                            </div>
+                            <div class="col-xs-1">
                                 1.0
                             </div>
                             <div class="col-xs-5">
                                 <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/FathersAndSons.txt">Версия без отбора существительных по роду</a>.
                             </div>
                             <div class="col-xs-1">
-                                2.0
+                                3.0
                             </div>
                             <div class="col-xs-5">
-                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_FathersAndSons.txt">Полный текст с учётом согласования по роду</a>.
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/3.0_FathersAndSons_JOF.txt">Полный текст с учётом залога и ёфикации</a>.
                             </div>
                         </div>
                     </div>
@@ -349,7 +395,19 @@
                                 2.0
                             </div>
                             <div class="col-xs-5">
-                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_SampleMasterAndMargarita.txt">Небольшой фрагмент для ознакомления</a>.
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_MasterAndMargarita.txt">Полный текст с учётом согласования по роду</a>.
+                            </div>
+			    <div class="col-xs-1">
+                                Оригинал
+                            </div>
+                            <div class="col-xs-5">
+                               <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_before/MasterAndMargarita_JOF.txt">Ёфицированный текст романа</a>.
+                            </div>
+                            <div class="col-xs-1">
+                                3.0
+                            </div>
+                            <div class="col-xs-5">
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/3.0_SampleMasterAndMargarita_JOF.txt">Небольшой фрагмент для ознакомления</a>.
                             </div>
                             <div class="col-xs-1">
                                 
@@ -359,10 +417,10 @@
                                 <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/MasterAndMargarita.txt">Версия без отбора существительных по роду</a>.
                             </div>
                             <div class="col-xs-1">
-                                2.0
+                                3.0
                             </div>
                             <div class="col-xs-5">
-                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/2.0_MasterAndMargarita.txt">Полный текст с учётом согласования по роду</a>.
+                                <a href="https://github.com/nevmenandr/word2vec-russian-novels/blob/master/books_after/3.0_MasterAndMargarita_JOF.txt">Полный текст с учётом залога и ёфикации</a>.
                             </div>
                         </div>
                     </div>
@@ -435,7 +493,17 @@
         
     </div>     
     <hr>
+	  <h2>Обсуждение на внешних ресурсах</h2>
+	    
+	    <ul>
+		    <li><a href="https://habrahabr.ru/post/326380/">Статья на Хабрахабре</a></li>
+		    <li><a href="https://ling.hse.ru/news/204860376.html">Новость на сайте Школы лингвистики НИУ ВШЭ</a></li>
+		    <li><a href="https://vk.com/wall-20629724_1006552">В паблике Хабра в VK</a></li>
+		    
+	    </ul>
     
+	    
+	    <hr>
     <h2>Другие эксперименты с литературой и векторными моделями</h2>
     
     <p>Стоит отметить <a href="https://habrahabr.ru/post/275913/">любопытное применение векторных моделей в поиске по т.н. «пирожкам»</a>.</p>
